@@ -4,6 +4,7 @@
     &__fs14px {
         font-size: 14px;
         line-height: 21px;
+        font-weight: 700;
     }
     &__fs16px {
         line-height: 24px;
@@ -19,5 +20,17 @@
     }
     &__fs48px {
         font-size: 48px;
+    }
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before-circle;
+        &:before {
+            width: 50px;
+            height: 50px;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
