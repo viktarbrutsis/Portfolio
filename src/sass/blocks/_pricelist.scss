@@ -7,7 +7,7 @@
         display: grid;
         grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 370px);//repeat(2, minmax(370px, auto));
         grid-auto-rows: minmax(44px, auto);
-        column-gap: 300px;
+        justify-content: space-around;
         row-gap: 15px;
     }
     &__item {

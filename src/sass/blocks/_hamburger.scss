@@ -1,13 +1,13 @@
 .hamburger {
-    height: 28px;
-    position: fixed;
+    height: 21px;
+    position: absolute;
     top: 20px;
     right: 30px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    cursor: pointer;
     span {
         display: block;
         width: 30px;

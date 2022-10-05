@@ -110,7 +110,7 @@
             <span></span>
         </div>
         <div class="container">
-            <div class=" title title__fs16px promo__subtitle">Меня зовут Виктор Брутис</div>
+            <div class="title title__fs16px promo__subtitle">Меня зовут Виктор Брутис</div>
             <h1 class="title title__fs48px promo__title">Я web-разработчик из города Минск</h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>
@@ -121,7 +121,18 @@
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <img src="img/main_photo.jpg" alt="" class="about__photo">
+                <div class="about__photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/Photo_mobile.jpg">
+                        <source media="(min-width: 577)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
+                    <!-- <img srcset="img/Photo_mobile.jpg 300w,
+                                img/main_photo.jpg"
+                        sizes="(max-width: 576px) 280px,
+                               (min-width: 577px) 400px"       
+                    src="img/main_photo.jpg" alt="about-photo"> -->
+                </div>
                 <div class="about__descr">
                     <h2 class="title title__fs16px about__title">Про меня</h2>
                     <div class="title title__fs36px about__subtitle">Меня зовут Виктория</div>
@@ -135,7 +146,7 @@
                         </div>
                         <div>
                             <div class="title title__fs14px">Web-разработка</div>
-                            <div class="about__skills-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aperiam placeat.</div>
+                            <div class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error temporibus nam unde quibusdam soluta nemo dolore nihil explicabo, iure, minima quia quam amet tempore necessitatibus a itaque autem! Sit, numquam?</div>
                         </div>
                     </div>
                     <div class="about__skills-item">
@@ -144,7 +155,7 @@
                         </div>
                         <div>
                             <div class="title title__fs14px">Разработка приложений</div>
-                            <div class="about__skills-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aperiam placeat.</div>
+                            <div class="about__skills-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit veniam nesciunt nulla pariatur rem excepturi consectetur, cupiditate, maiores temporibus distinctio, enim magni a dolorum harum laudantium? Ea officiis accusamus harum!</div>
                         </div>
                     </div>
                     <div class="about__skills-item">
@@ -153,7 +164,7 @@
                         </div>
                         <div>
                             <div class="title title__fs14px">UI/UX Design</div>
-                            <div class="about__skills-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aperiam placeat.</div>
+                            <div class="about__skills-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio cupiditate quibusdam numquam omnis at laudantium pariatur sint assumenda ipsum odit, velit magnam repellat mollitia. Dolor ea facere quaerat animi delectus.</div>
                         </div>
                     </div>
                 </div>
@@ -233,8 +244,8 @@
 
     <section class="skills">
         <div class="container">
-            <h2 class="title title__fs16px resume__title">Опыт</h2>
-            <div class="title title__fs36px resume__subtitle">Чем я буду полезна</div>
+            <h2 class="title title__fs16px resume__title">Навыки</h2>
+            <div class="title title__fs36px resume__subtitle">Что я использую в работе</div>
             <div class="divider"></div>
             <div class="skills__wrapper">
                 <div class="skills__item">
@@ -429,43 +440,50 @@
                     <img src="img/main_photo.jpg" alt="contacts_photo">
                 </div>
                 <div class="contacts__info">
-                    <div class="title title__fs16px title__title">Контакты</div>
-                    <div class="subtitle title__fs36px contacts__subtitle">Свяжитесь со мной</div>
-                    <div class="divider"></div>
-                    <div class="contacts__way title__fs14px">Любым удобным для вас способом:</div>
-                    <div class="contacts__social">
-                            <a href="#" class="contacts__link">
-                                <img src="icons/social/Facebook-2.svg" alt="facebook">
-                            </a>
-                            <a href="#" class="contacts__link">
-                                <img src="icons/social/telegram.svg" alt="">
-                            </a>
-                            <a href="#" class="contacts__link">
-                                <img src="icons/social/Instagram-2.svg" alt="">
-                            </a>
-                            <a href="#" class="contacts__link">
-                                <img src="icons/social/telegram.svg" alt="">
-                            </a>
-                            <a href="#" class="contacts__link">
-                                <img src="icons/social/Instagram-2.svg" alt="">
-                            </a>
+                    <div class="contacts__block">
+                        <div class="title title__fs16px title__title">Контакты</div>
+                        <div class="subtitle title__fs36px contacts__subtitle">Свяжитесь со мной</div>
+                        <div class="divider"></div>
+                        <div class="contacts__way title__fs14px">Любым удобным для вас способом:</div>
+                        <div class="contacts__social">
+                                <a href="#" class="contacts__link">
+                                    <img src="icons/social/Facebook-2.svg" alt="facebook">
+                                </a>
+                                <a href="#" class="contacts__link">
+                                    <img src="icons/social/telegram.svg" alt="">
+                                </a>
+                                <a href="#" class="contacts__link">
+                                    <img src="icons/social/Instagram-2.svg" alt="">
+                                </a>
+                                <a href="#" class="contacts__link">
+                                    <img src="icons/social/telegram.svg" alt="">
+                                </a>
+                                <a href="#" class="contacts__link">
+                                    <img src="icons/social/Instagram-2.svg" alt="">
+                                </a>
+                        </div>
+                        <div class="contacts__message title__fs14px">Или оставьте ваши данные и я сама вам напишу:</div>
                     </div>
-                    <div class="contacts__message title__fs14px">Или оставьте ваши данные и я сама вам напишу:</div>
+                    
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input id="name" name="name" type="text" placeholder="Введите ваше имя">
+                            <input required id="name" name="name" type="text" placeholder="Введите ваше имя">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input id="email" name="email" type="text" placeholder="Введите ваш email">
+                            <input required id="email" name="email" type="text" placeholder="Введите ваш email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea id="textarea" name="textarea" ></textarea>
                             <label for="textarea">Ваше сообщение</label>
                         </div>
-                        <div class="contacts__button">
-                            <button class="btn">Отправить сообщение</button>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
 
